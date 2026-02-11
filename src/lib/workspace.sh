@@ -15,7 +15,7 @@ create_workspace() {
 
   local dirs=(
     "$OPENCLAW_WORKSPACE/00_CORE"
-    "$OPENCLAW_WORKSPACE/01_AGENTS/cami/memory/daily"
+    "$OPENCLAW_WORKSPACE/01_AGENTS/limon/memory/daily"
     "$OPENCLAW_WORKSPACE/01_AGENTS/dev_agent/memory/daily"
     "$OPENCLAW_WORKSPACE/01_AGENTS/research_agent/memory/daily"
     "$OPENCLAW_WORKSPACE/01_AGENTS/content_agent/memory/daily"

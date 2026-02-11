@@ -4,7 +4,7 @@
 
 El sistema ya corre. El heartbeat late cada 15 min.
 
-- [ ] Habla con Cami por Telegram: "Hola, estoy listo"
+- [ ] Habla con Limón por Telegram: "Hola, estoy listo"
 - [ ] Pide algo simple: "Resume las noticias de hoy sobre [tu sector]"
 - [ ] Aprueba o rechaza propuestas que te lleguen
 - [ ] NO actives nada mas esta semana
@@ -38,7 +38,7 @@ sqlite3 ~/.openclaw/data/openclaw.db "UPDATE trigger_rules SET enabled = 1 WHERE
 # 3. Dev revisa codigo cada 4h
 sqlite3 ~/.openclaw/data/openclaw.db "UPDATE trigger_rules SET enabled = 1 WHERE name = 'proactive_code_review';"
 
-# 4. Cami analiza operaciones cada 8h
+# 4. Limón analiza operaciones cada 8h
 sqlite3 ~/.openclaw/data/openclaw.db "UPDATE trigger_rules SET enabled = 1 WHERE name = 'proactive_analyze_ops';"
 ```
 

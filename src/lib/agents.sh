@@ -32,7 +32,7 @@ deploy_agents() {
   fi
 
   # Deploy agent files with context injection
-  local agents=("cami" "dev_agent" "research_agent" "content_agent" "security_agent")
+  local agents=("limon" "dev_agent" "research_agent" "content_agent" "security_agent")
   local count=0
   for agent in "${agents[@]}"; do
     local ad="$agents_dir/$agent"

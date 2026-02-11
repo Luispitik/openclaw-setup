@@ -16,7 +16,7 @@ sudo systemctl restart openclaw-gateway
 
 1. `openclaw gateway status` → debe decir "running"
 2. `openclaw sessions list` → verificar sesiones
-3. `openclaw sessions restart agent:cami:main` → reiniciar
+3. `openclaw sessions restart agent:limon:main` → reiniciar
 
 ## Telegram no funciona
 
@@ -24,7 +24,7 @@ sudo systemctl restart openclaw-gateway
 openclaw channels status
 # Si no aparece:
 openclaw channels remove telegram
-openclaw channels add telegram --token "TOKEN" --session "agent:cami:main" --allowed-users "TU_ID"
+openclaw channels add telegram --token "TOKEN" --session "agent:limon:main" --allowed-users "TU_ID"
 ```
 
 ## Tokens se gastan rapido

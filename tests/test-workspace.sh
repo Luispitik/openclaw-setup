@@ -18,7 +18,7 @@ source "$ROOT_DIR/src/lib/workspace.sh"
 echo "=== Test: workspace.sh (temp: $TEST_DIR) ==="
 create_workspace "$ROOT_DIR"
 
-for dir in "00_CORE" "01_AGENTS/cami/memory/daily" "01_AGENTS/dev_agent/memory/daily" \
+for dir in "00_CORE" "01_AGENTS/limon/memory/daily" "01_AGENTS/dev_agent/memory/daily" \
   "02_PROJECTS" "03_MEMORY/daily" "04_SKILLS/proposal_service" "05_TOOLS" \
   "06_CRON/heartbeat" "07_OUTPUTS/reports" "08_LOGS/agent_activity"; do
   if [ -d "$OPENCLAW_WORKSPACE/$dir" ]; then

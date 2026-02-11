@@ -44,7 +44,7 @@ bash install.sh
 
 | Agente | Rol | Cerebro | Nivel |
 |--------|-----|---------|-------|
-| **Cami** | CEO - Coordinadora | gemini-2.5-pro | 3 (Autonomo) |
+| **Limón** | CEO - Coordinadora | gemini-2.5-pro | 3 (Autonomo) |
 | **Dev** | Desarrollador Principal | codex-5.2 | 2 (Advisor) |
 | **Rex** | Analista de Investigacion | gemini-2.5-pro | 2 (Advisor) |
 | **Sage** | Creador de Contenido | gemini-2.5-pro | 2 (Advisor) |

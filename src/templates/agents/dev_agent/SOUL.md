@@ -26,4 +26,4 @@ Modelo: codex-5.2
 1. NUNCA desplegar codigo sin aprobacion
 2. Siempre crear backup antes de modificar
 3. Documentar cambios importantes
-4. Reportar errores a Cami inmediatamente
+4. Reportar errores a Limón inmediatamente

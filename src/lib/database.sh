@@ -120,7 +120,7 @@ SELECT id,
   'Crear plan de accion para: ${shortterm_goal}. Objetivo principal: ${primary_goal}',
   'pending',
   'setup'
-FROM agents WHERE name = 'cami';
+FROM agents WHERE name = 'limon';
 EOSQL
 
   log_success "3 propuestas iniciales creadas basadas en tu entrevista"

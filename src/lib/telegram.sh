@@ -7,7 +7,7 @@ setup_telegram() {
   local setup_dir="${1:-.}"
   if [ "$WANT_TELEGRAM" != true ]; then
     log_info "Telegram no configurado (opcional). Configura despues con:"
-    log_info "  openclaw channels add telegram --token TOKEN --session agent:cami:main --allowed-users USER_ID"
+    log_info "  openclaw channels add telegram --token TOKEN --session agent:limon:main --allowed-users USER_ID"
     return 0
   fi
 
@@ -16,7 +16,7 @@ setup_telegram() {
 
   openclaw channels add telegram \
     --token "$TELEGRAM_TOKEN" \
-    --session "agent:cami:main" \
+    --session "agent:limon:main" \
     --allowed-users "$TELEGRAM_USER_ID" 2>&1 | tail -3
 
   openclaw channels status 2>&1 | grep -qi "telegram" && \
