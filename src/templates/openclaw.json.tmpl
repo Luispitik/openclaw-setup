@@ -1,0 +1,31 @@
+{
+  "gateway": {
+    "host": "{{GATEWAY_HOST}}",
+    "port": {{GATEWAY_PORT}}
+  },
+  "security": {
+    "dm_policy": "pairing",
+    "sandbox_mode": "non-main",
+    "config_patch_enabled": false
+  },
+  "models": {
+    "default": "gemini-2.5-flash",
+    "routing": {
+      "simple_tasks": "gemini-2.5-flash",
+      "medium_tasks": "gemini-2.5-pro",
+      "complex_reasoning": "gemini-3-pro",
+      "code_development": "codex-5.2"
+    }
+  },
+  "memory": {
+    "auto_load": false,
+    "max_file_size_kb": 8
+  },
+  "workspace": {
+    "root": "{{WORKSPACE_ROOT}}",
+    "allowed_paths": [
+      "{{WORKSPACE_ROOT}}",
+      "{{CLAWWORK_PATH}}"
+    ]
+  }
+}

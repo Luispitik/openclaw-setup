@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Description>OpenClaw Gateway - AI Multi-Agent System</Description>
+  </RegistrationInfo>
+  <Triggers>
+    <BootTrigger><Enabled>true</Enabled></BootTrigger>
+  </Triggers>
+  <Actions>
+    <Exec>
+      <Command>{{OPENCLAW_PATH}}</Command>
+      <Arguments>gateway start --foreground</Arguments>
+      <WorkingDirectory>{{HOME}}\.openclaw</WorkingDirectory>
+    </Exec>
+  </Actions>
+  <Settings>
+    <RestartOnFailure>
+      <Interval>PT1M</Interval>
+      <Count>3</Count>
+    </RestartOnFailure>
+  </Settings>
+</Task>

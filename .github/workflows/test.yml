@@ -1,0 +1,36 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  shellcheck:
+    name: ShellCheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@master
+        with:
+          scandir: './src'
+          severity: warning
+
+  unit-tests:
+    name: Unit Tests
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test OS detection
+        run: bash tests/test-detect-os.sh
+      - name: Test credential patterns
+        run: bash tests/test-credentials.sh
+      - name: Test workspace creation
+        run: bash tests/test-workspace.sh
+      - name: Test config generation
+        run: bash tests/test-config.sh

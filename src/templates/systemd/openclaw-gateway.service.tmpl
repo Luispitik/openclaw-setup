@@ -1,0 +1,15 @@
+[Unit]
+Description=OpenClaw Gateway - Sistema de Agentes IA
+After=network.target
+
+[Service]
+Type=simple
+User={{USER}}
+WorkingDirectory={{HOME}}/.openclaw
+ExecStart={{OPENCLAW_PATH}} gateway start --foreground
+Restart=always
+RestartSec=10
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
